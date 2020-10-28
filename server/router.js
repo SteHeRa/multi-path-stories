@@ -2,8 +2,9 @@ const express = require('express');
 
 const router = express.Router();
 
-const testCtrl = require('./controllers/pugtest');
+const branchCtrl = require('./controllers/branches');
 
-router.get('/', testCtrl.makeHTML);
+router.get('/', branchCtrl.getPrompt);
+router.post('/', branchCtrl.postBranch);
 
 module.exports = router;
