@@ -56,7 +56,8 @@ The prompt and branches that you can see is determined by parameters in the url,
 Conditional statements in the .pug template mean if the branch is undefined the user is presented with a text input but if a branch has already been filled they are instead presented with a hyperlink that directs them to a url with a parameter
 `?prompt=*value for this branch that was retrieved from database*`
 
-There is currently no form validation on the inputs.
-The controller function for posting a new branch has a lot of repeated code in it. Given a bit more time I would like to try and refactor it.
+There is currently no form validation on the inputs.<br>
+The controller function for posting a new branch has a lot of repeated code in it. Given a bit more time I would like to try and refactor it.<br>
+I probably should have set up for using docker to streamline the process of setting up the database.<br>
 
 I think this test is testing my ability to try and solve a problem with a limited tool set, i.e. not being able to use JavaScript to make API requests on the client side, my ability to write a stable back end, and possibly open up to discussion my choices in tools/technologies on the back end.
