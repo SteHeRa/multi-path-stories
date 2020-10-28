@@ -1,0 +1,53 @@
+doctype html
+html
+  head
+    title multi-path-stories
+    style
+      include style.css
+  body
+    a(href="http://localhost:3000") Back to Start
+    form(action=`http://localhost:3000?prompt=${prompt}`, method="post")
+      table
+        tr
+          td
+          if north
+            td
+              a(href=`http://localhost:3000/?prompt=${north}`) #{north}
+          else
+            td
+              label(for="north")
+              input(type="text" name="north")
+              input(type="submit")
+          td
+        tr
+          if west
+            td
+              a(href=`http://localhost:3000/?prompt=${west}`) #{west}
+          else
+            td
+              label(for="west")
+              input(type="text", name="west")
+              input(type="submit")
+          if prompt
+            td= prompt
+          else
+            td
+          if east
+            td
+              a(href=`http://localhost:3000/?prompt=${east}`) #{east}
+          else
+            td
+              label(for="east")
+              input(type="text", name="east")
+              input(type="submit")
+        tr
+          td
+          if south
+            td
+              a(href=`http://localhost:3000/?prompt=${south}`) #{south}
+          else
+            td
+              label(for="south")
+              input(type="text", name="south")
+              input(type="submit")
+          td
