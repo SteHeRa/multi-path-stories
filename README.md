@@ -12,6 +12,8 @@
 
 - [Tech Stack](#Tech-Stack)
 
+- [Design & Implementation](#Design-&-Implementation)
+
 ## Getting Started
 
 These instructions will help you setup a local development instance of the app.
@@ -48,7 +50,7 @@ These instructions will help you setup a local development instance of the app.
 - [PostgreSQL](https://www.postgresql.org/)
 - [Sequelize](https://sequelize.org/)
 
-## Design & implementation
+## Design & Implementation
 
 My approach to this test was to generate a template for the table using a templating engine (pug) that would be populated with data coming from a relational database.<br>
 As users enter branches into the story and click submit the form will send post requests to an Express server which will update the table in the database. This allows for returning to the begining of the story.<br>
