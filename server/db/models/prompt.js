@@ -3,8 +3,9 @@ const { Model } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class Prompt extends Model {
     static associate(models) {
-      Prompt.hasOne(models.Branches, {
+      Prompt.belongsTo(models.Branches, {
         foreignKey: 'id',
+        allowNull: false,
       });
     }
   }
