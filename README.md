@@ -30,7 +30,7 @@ These instructions will help you setup a local development instance of the app.
 - Install server dependencies:
   `cd server`
   `npm install`
-- You will need to create a database on your local machine called "multipathstories_dev"
+- You will need to create a PostgreSQL database on your local machine called "multipathstories_dev"
 - Create a `.env` file in the server directory (`/server/.env`) and fill it following the example `/server/.env.example`
 - Initialise the database by running `npx sequelize-cli db:migrate` from within the server directory.
 
