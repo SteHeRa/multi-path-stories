@@ -6,31 +6,31 @@ module.exports = {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
       },
       north: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       east: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       south: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       west: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE
-      }
+        type: Sequelize.DATE,
+      },
     });
   },
-  down: async (queryInterface, Sequelize) => {
+  down: async (queryInterface) => {
     await queryInterface.dropTable('Branches');
-  }
+  },
 };
