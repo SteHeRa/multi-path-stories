@@ -6,13 +6,13 @@
 
   - [Setup Prerequisites](#Setup-Prerequisites)
 
-  - [Server & Database Setup](#Server-&-Database-Setup)
+  - [Server & Database Setup](#Server--Database-Setup)
 
   - [Start the App](#Start-the-App)
 
 - [Tech Stack](#Tech-Stack)
 
-- [Design & Implementation](#Design-&-Implementation)
+- [Design & Implementation](#Design--Implementation)
 
 ## Getting Started
 
